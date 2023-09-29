@@ -1,2 +1,4 @@
-# ignite-feed
-A React Feed
+# Ignite Feed
+
+Projeto de estudo do ReactJs na Rocketseat
+

@@ -1,10 +1,23 @@
+import {Header} from "./components/Header.jsx";
+import {Post} from "./Post.jsx";
 
-function App() {
+import './styles.css';
+export function App() {
   return (
     <>
-      <h1>Hello World</h1>
+      <Header />
+      <Post
+        author="Wagner Rigoli da Rosa"
+        content="asdf asdfasdf açlsdkfj açsdjf çlasdjfça jsdçfljasçldjf çlasdjçf ljasdçlfkjaçlskdjf a"
+      />
+      <Post
+        author="Maria Joaquina"
+        content="asdf asdfasdf açlsdkfj açsdjf çlasdjfça jsdçfljasçldjf çlasdjçf ljasdçlfkjaçlskdjf a"
+      />
+      <Post
+        author="Terezinha da Silva"
+        content="asdf asdfasdf açlsdkfj açsdjf çlasdjfça jsdçfljasçldjf çlasdjçf ljasdçlfkjaçlskdjf a"
+      />
     </>
   )
 }
-
-export default App

@@ -1,10 +1,31 @@
+import {Header} from "./components/Header.jsx";
+import {Post} from "./Post.jsx";
 
-function App() {
+import styles from './App.module.css';
+
+import './global.css';
+import {Sidebar} from "./components/Sidebar.jsx";
+export function App() {
   return (
     <>
-      <h1>Hello World</h1>
+      <Header />
+      <div className={styles.wrapper}>
+        <Sidebar />
+        <main>
+          <Post
+            author="Wagner Rigoli da Rosa"
+            content="asdf asdfasdf açlsdkfj açsdjf çlasdjfça jsdçfljasçldjf çlasdjçf ljasdçlfkjaçlskdjf a"
+          />
+          <Post
+            author="Maria Joaquina"
+            content="asdf asdfasdf açlsdkfj açsdjf çlasdjfça jsdçfljasçldjf çlasdjçf ljasdçlfkjaçlskdjf a"
+          />
+          <Post
+            author="Terezinha da Silva"
+            content="asdf asdfasdf açlsdkfj açsdjf çlasdjfça jsdçfljasçldjf çlasdjçf ljasdçlfkjaçlskdjf a"
+          />
+        </main>
+      </div>
     </>
   )
 }
-
-export default App
